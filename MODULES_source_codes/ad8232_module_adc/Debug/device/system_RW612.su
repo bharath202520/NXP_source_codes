@@ -1,0 +1,12 @@
+../device/system_RW612.c:71:28:SystemInit	8	static
+../device/system_RW612.c:117:17:getT3PllMciIrcClkFreq	16	static
+../device/system_RW612.c:137:17:getTcpuFvcoFreq	16	static
+../device/system_RW612.c:164:17:getT3PllMci256mClkFreq	16	static
+../device/system_RW612.c:170:17:getTcpuMciClkFreq	16	static
+../device/system_RW612.c:176:17:getSysOscFreq	4	static
+../device/system_RW612.c:181:17:getFFroFreq	8	static
+../device/system_RW612.c:186:17:getLpOscFreq	4	static
+../device/system_RW612.c:191:17:getSFroFreq	8	static
+../device/system_RW612.c:196:17:getMainPllClkFreq	8	static
+../device/system_RW612.c:201:6:SystemCoreClockUpdate	16	static
+../device/system_RW612.c:252:28:SystemInitHook	4	static

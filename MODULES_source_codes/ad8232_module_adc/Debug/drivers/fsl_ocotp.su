@@ -1,0 +1,11 @@
+../drivers/fsl_ocotp.c:62:17:otp_get_nonmask_status_result	24	static
+../drivers/fsl_ocotp.c:87:17:otp_wait_busy	16	static
+../drivers/fsl_ocotp.c:114:13:otp_clear_status	4	static
+../drivers/fsl_ocotp.c:121:10:OCOTP_OtpInit	8	static
+../drivers/fsl_ocotp.c:133:10:OCOTP_OtpDeinit	16	static
+../drivers/fsl_ocotp.c:150:10:OCOTP_OtpFuseRead	24	static
+../drivers/fsl_ocotp.c:191:10:OCOTP_ReadUniqueID	40	static
+../drivers/fsl_ocotp.c:230:17:soc_otp_read	88	static
+../drivers/fsl_ocotp.c:252:10:OCOTP_ReadSocOtp	40	static
+../drivers/fsl_ocotp.c:282:10:OCOTP_ReadSVC	24	static
+../drivers/fsl_ocotp.c:293:10:OCOTP_ReadPackage	32	static
