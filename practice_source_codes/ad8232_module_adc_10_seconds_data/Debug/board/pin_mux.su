@@ -1,0 +1,3 @@
+C:\Users\admin\Downloads\FRDM_RW612_NXP_Controller-main\FRDM_RW612_NXP_Controller-main\ADC_Examples\frdmrw612_adc_ad8232_signals\drivers/fsl_io_mux.h:1578:20:IO_MUX_SetPinMux	32	static
+../board/pin_mux.c:35:6:BOARD_InitBootPins	8	static
+../board/pin_mux.c:58:6:BOARD_InitPins	32	static
