@@ -1,0 +1,8 @@
+../drivers/fsl_iped.h:131:20:IPED_IsRegionLocked	24	static
+../drivers/fsl_iped.c:15:10:IPED_SetRegionAddressRange	32	static
+../drivers/fsl_iped.c:45:10:IPED_SetRegionEnable	32	static
+../drivers/fsl_iped.c:74:6:IPED_GetRegionAddressRange	32	static
+../drivers/fsl_iped.c:86:6:IPED_SetRegionIV	32	static
+../drivers/fsl_iped.c:95:6:IPED_GetRegionIV	32	static
+../drivers/fsl_iped.c:104:6:IPED_SetRegionAAD	32	static
+../drivers/fsl_iped.c:113:6:IPED_GetRegionAAD	32	static
