@@ -37,7 +37,7 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := ad8232_module_adc_10_seconds_data
+BUILD_ARTIFACT_NAME := Heart_Rate_normal_or_abnormal_live_data
 BUILD_ARTIFACT_EXTENSION := axf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
@@ -49,24 +49,24 @@ all:
 	+@$(MAKE) --no-print-directory main-build && $(MAKE) --no-print-directory post-build
 
 # Main-build Target
-main-build: ad8232_module_adc_10_seconds_data.axf
+main-build: Heart_Rate_normal_or_abnormal_live_data.axf
 
 # Tool invocations
-ad8232_module_adc_10_seconds_data.axf: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
+Heart_Rate_normal_or_abnormal_live_data.axf: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -Xlinker -no-warn-rwx-segments -Xlinker -Map="ad8232_module_adc_10_seconds_data.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -T "ad8232_module_adc_Debug.ld" -o "ad8232_module_adc_10_seconds_data.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -Xlinker -no-warn-rwx-segments -Xlinker -Map="Heart_Rate_normal_or_abnormal_live_data.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m33+nodsp -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -T "Heart_Rate_normal_or_abnormal_live_data_Debug.ld" -o "Heart_Rate_normal_or_abnormal_live_data.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) ad8232_module_adc_10_seconds_data.axf
+	-$(RM) Heart_Rate_normal_or_abnormal_live_data.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "ad8232_module_adc_10_seconds_data.axf"; # arm-none-eabi-objcopy -v -O binary "ad8232_module_adc_10_seconds_data.axf" "ad8232_module_adc_10_seconds_data.bin" ; # checksum -p RW612 -d "ad8232_module_adc_10_seconds_data.bin";
+	-arm-none-eabi-size "Heart_Rate_normal_or_abnormal_live_data.axf"; # arm-none-eabi-objcopy -v -O binary "Heart_Rate_normal_or_abnormal_live_data.axf" "Heart_Rate_normal_or_abnormal_live_data.bin" ; # checksum -p RW612 -d "Heart_Rate_normal_or_abnormal_live_data.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents main-build post-build
